@@ -1,0 +1,65 @@
+@use '@/styles/variables' as *;
+
+.contactSection {
+  padding: $spacing-3xl 0;
+  background: $white;
+}
+
+.infoCont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-2xl;
+  margin-bottom: $spacing-2xl;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-sm;
+
+  .text {
+    font-size: $font-size-base;
+    color: $text-muted;
+  }
+
+  a {
+    font-size: $font-size-lg;
+    font-weight: 600;
+    color: $primary-color;
+    transition: color $transition-normal;
+
+    &:hover {
+      color: color-mix(in srgb, $primary-color 90%, #000 10%);
+    }
+  }
+}
+
+.socCont {
+  display: flex;
+  gap: $spacing-lg;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.soc {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: $spacing-md $spacing-lg;
+  background: $light-gray;
+  border-radius: $border-radius-md;
+  color: $text-dark;
+  font-weight: 500;
+  transition: transform $transition-normal, box-shadow $transition-normal;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+

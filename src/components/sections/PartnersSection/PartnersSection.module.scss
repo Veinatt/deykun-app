@@ -1,0 +1,43 @@
+@use '@/styles/variables' as *;
+
+.partnersSection {
+  padding: $spacing-3xl 0;
+  background: $light-gray;
+}
+
+.secTitle {
+  font-size: $font-size-6xl;
+  font-weight: 700;
+  color: $text-dark;
+  margin-bottom: $spacing-2xl;
+  text-align: center;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+.partnersCont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: $spacing-xl;
+  align-items: center;
+  justify-items: center;
+}
+
+.partnerLogo {
+  max-width: 150px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: filter $transition-normal, opacity $transition-normal;
+
+  &:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+}
+

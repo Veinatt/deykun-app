@@ -1,0 +1,85 @@
+@use '@/styles/variables' as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  line-height: 1em;
+  border: none;
+  border-radius: 2em;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all $transition-normal;
+  padding: $spacing-1 $spacing-3;
+  position: relative;
+  white-space: nowrap;
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+
+  // Варианты
+  &.primary {
+    background: $primary-color;
+    color: $white;
+
+  }
+
+  &.secondary {
+    background: $secondary-color;
+    color: $white;
+
+  }
+
+  &.outline {
+    background: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+
+  }
+
+  &.ghost {
+    background: transparent;
+    color: $primary-color;
+
+  }
+  &.white {
+    background: $white;
+    color: $black;
+
+  }
+  // Размеры
+  &.small {
+    font-size: 14px;
+  }
+
+  &.medium {
+    font-size: 16px;
+  }
+
+  &.large {
+    font-size: 18px;
+  }
+
+  // Полная ширина
+  &.fullWidth {
+    width: 100%;
+  }
+
+  // Метка скидки
+  .saleMark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(25%, -50%) rotate(3deg);
+    background: $accent-red;
+    color: $white;
+    padding: 3px 10px;
+    border-radius: 1em;
+    font-size: 14px;
+  }
+}
+

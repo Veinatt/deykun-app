@@ -1,0 +1,77 @@
+@use '@/styles/variables' as *;
+
+.deykunSec2 {
+  padding: 120px 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  
+  @media (max-width: $breakpoint-lg) {
+    margin-bottom: 70px;
+  }
+  
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: 50px;
+  }
+}
+
+
+
+.scCont {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  
+  @media (max-width: $breakpoint-xl) {
+    width: 100%;
+  }
+}
+
+.point {
+  position: relative;
+  font-family: $font-family-base;
+  font-size: $font-size-xl;
+  transition: all 0.7s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  line-height: 1.2em;
+  white-space: nowrap;
+  padding: $spacing-xl $spacing-md;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: $border-radius-lg;
+  background: $light-gray;
+  backdrop-filter: blur(2px);
+  width: calc((100% - 60px) / 4);
+  
+  @media (max-width: $breakpoint-xl) {
+    width: calc((100% - 20px) / 2);
+  }
+  
+  @media (max-width: 500px) {
+    padding: $spacing-lg $spacing-md;
+    width: 100%;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+}
+
+
+.topC {
+  margin-bottom: $spacing-lg;
+  display: flex;
+  align-items: flex-start;
+  gap: $spacing-sm;
+  width: 100%;
+  
+  div {
+    white-space: normal;
+  }
+}

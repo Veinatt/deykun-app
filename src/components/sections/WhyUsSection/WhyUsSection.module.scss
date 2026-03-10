@@ -1,0 +1,71 @@
+@use '@/styles/variables' as *;
+
+.deykunSec2Why {
+  padding: 120px 0;
+  
+  @media (max-width: $breakpoint-lg) {
+    padding: 70px 0;
+  }
+  
+  @media (max-width: $breakpoint-sm) {
+    padding: 50px 0;
+  }
+}
+
+
+.scCont {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.point {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: calc(50% - 15px);
+  position: relative;
+  
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+  }
+}
+
+.imgCont {
+  height: 135px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: $border-radius-lg;
+  background-color: var(--bg-color, transparent);
+  
+  @media (max-width: 1400px) {
+    height: 125px;
+  }
+  
+  @media (max-width: 1199px) {
+    height: 115px;
+  }
+  
+  @media (max-width: 800px) {
+    height: 100px;
+    
+    img {
+      transform: scale(0.7);
+    }
+  }
+}
+
+.infoCont {
+  flex: 1;
+}
+
+
+.text {
+  font-family: $font-family-light;
+  font-size: $font-size-lg;
+  color: $text-dark;
+  transition: all $transition-normal;
+}
+

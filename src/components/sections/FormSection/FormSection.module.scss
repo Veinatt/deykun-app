@@ -1,0 +1,48 @@
+@use '@/styles/variables' as *;
+
+.formSection {
+  padding: $spacing-3xl 0;
+  background: $light-gray;
+}
+
+.secTitle {
+  font-size: $font-size-5xl;
+  font-weight: 700;
+  color: $text-dark;
+  margin-bottom: $spacing-md;
+  text-align: center;
+
+  span {
+    color: $primary-color;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+.text {
+  font-size: $font-size-lg;
+  color: $text-muted;
+  text-align: center;
+  margin-bottom: $spacing-2xl;
+}
+
+.formCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-2xl;
+  position: relative;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+}
+
+.formImg {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+

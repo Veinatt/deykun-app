@@ -1,0 +1,61 @@
+@use '@/styles/variables' as *;
+
+.deykunSec5 {
+  margin-bottom: 120px;
+  position: relative;
+  
+  @media (max-width: $breakpoint-lg) {
+    margin-bottom: 70px;
+  }
+  
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: 50px;
+  }
+}
+
+
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.emoCont {
+  padding: $spacing-15 $spacing-1;
+  border-radius: $border-radius-lg;
+  width: calc((100% - 30px) / 4);
+  background-color: #FFF1F1;
+  font-size: $font-size-xl;
+  font-family: $font-family-base;
+  
+  img {
+    margin-bottom: 20px;
+    @media (max-width: 500px) {
+      margin-bottom: 10px;
+    }
+  }
+  
+  div {    
+    p {
+      color: $primary-color;
+    }
+  }
+  
+  @media (max-width: $breakpoint-xl) {
+    font-size: $font-size-lg;
+  }
+  
+  @media (max-width: $breakpoint-lg) {
+    width: calc((100% - 10px) / 2);
+    font-size: $font-size-base;
+  }
+  
+  @media (max-width: $breakpoint-sm) {
+    width: 100%;
+    padding: $spacing-1 $spacing-md;
+  }
+}
+
+.lastEmoCont {
+  background-color: $light-gray !important;
+}

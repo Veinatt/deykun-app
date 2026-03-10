@@ -1,0 +1,55 @@
+@use '@/styles/variables' as *;
+
+.discountSection {
+  padding: $spacing-3xl 0;
+  background: $white;
+  position: relative;
+  overflow: hidden;
+}
+
+.subCont {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.secTitle {
+  font-size: $font-size-5xl;
+  font-weight: 700;
+  color: $text-dark;
+  margin-bottom: $spacing-lg;
+
+  span {
+    color: $primary-color;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+.text {
+  font-size: $font-size-lg;
+  color: $text-muted;
+  margin-bottom: $spacing-2xl;
+  line-height: 1.6;
+}
+
+.discountImg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+  z-index: 0;
+
+  @media (max-width: $breakpoint-lg) {
+    display: none;
+  }
+}
+

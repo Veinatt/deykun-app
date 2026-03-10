@@ -1,0 +1,196 @@
+@use "@/styles/variables" as *;
+
+.header {
+  top: 0;
+  position: fixed;
+  transition: all $transition-normal;
+  z-index: 1000;
+  color: $white;
+  width: 100%;
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: $primary-color;
+
+  &.active {
+    color: $black;
+    background-color: $white;
+    border-bottom: 1px solid $black;
+
+    .rbH {
+      background-color: $primary-color;
+      color: $white;
+    }
+
+    .dropbtn {
+      color: $black;
+      border: 1px solid $medium-gray;
+
+      svg path {
+        stroke: $black;
+      }
+    }
+
+    .dropdownContent {
+      border: 1px solid $medium-gray;
+    }
+
+    .logo {
+      color: $black;
+    }
+  }
+}
+
+.headerCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px $spacing-md;
+  max-width: $breakpoint-xl;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: $font-regular;
+  font-size: $font-size-3xl;
+  color: $white;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  @media (max-width: 600px) {
+    font-size: $font-size-xl;
+  }
+
+  @media (max-width: 400px) {
+    font-size: $font-size-lg;
+  }
+
+  @media (max-width: 350px) {
+    font-size: $font-size-base;
+  }
+}
+
+// Кнопка "Начать проект"
+.reqBtn {
+  min-width: 11em;
+  transition: all $transition-normal;
+  padding: $spacing-075 $spacing-15;
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+  font-family: $font-regular;
+  font-size: $font-size-lg;
+  line-height: 1.2em;
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 420px) {
+    font-size: $font-size-sm;
+    min-width: 9em;
+    padding: 0.6em 1.2em;
+  }
+
+  @media (max-width: 350px) {
+    font-size: $font-size-xs;
+    min-width: 8em;
+  }
+}
+
+.rbH {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: $white;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+// Dropdown стили
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  font-family: $font-regular;
+  font-size: $font-size-lg;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2em;
+  color: $white;
+  padding: $spacing-075 $spacing-15;
+  min-width: 11em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  background: none;
+  transition: all $transition-normal;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  div {
+    line-height: 1em;
+  }
+
+  * {
+    z-index: -1;
+  }
+
+  @media (max-width: 420px) {
+    font-size: $font-size-base;
+    min-width: 9em;
+    padding: 0.6em 1.2em;
+
+    svg {
+      transform: scale(0.7);
+    }
+  }
+
+  @media (max-width: 350px) {
+    font-size: $font-size-xs;
+    min-width: 8em;
+  }
+}
+
+.dropdownContent {
+  top: calc(100% + 10px);
+  left: 0;
+  overflow: hidden;
+  border-radius: $font-size-xl;
+  position: absolute;
+  background-color: $white;
+  font-size: $font-size-lg;
+  min-width: 11em;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: $shadow-lg;
+  a {
+    color: $black;
+    padding: $spacing-075 $spacing-15;
+    text-decoration: none;
+    display: block;
+    font-family: $font-regular;
+    transition: background-color $transition-normal;
+
+    &:hover {
+      background-color: #e3e9ff;
+    }
+  }
+
+  @media (max-width: 420px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 10px;
+  }
+}

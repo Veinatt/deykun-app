@@ -1,0 +1,121 @@
+@use '@/styles/variables' as *;
+
+.rate {
+  background: $white;
+  border-radius: $border-radius-lg;
+  padding: $spacing-xl;
+  box-shadow: $shadow-md;
+  transition: transform $transition-normal, box-shadow $transition-normal;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-xl;
+  }
+}
+
+.topOfCard {
+  position: relative;
+  margin-bottom: $spacing-lg;
+}
+
+.title {
+  font-size: $font-size-2xl;
+  font-weight: 700;
+  color: $text-dark;
+  margin-bottom: $spacing-sm;
+}
+
+.desc {
+  font-size: $font-size-base;
+  color: $text-muted;
+  line-height: 1.6;
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $accent-red;
+  color: $white;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $border-radius-sm;
+  font-size: $font-size-xs;
+  font-weight: 600;
+}
+
+.priceCont {
+  display: flex;
+  gap: $spacing-lg;
+  margin-bottom: $spacing-lg;
+  align-items: flex-end;
+}
+
+.our {
+  .price {
+    font-size: $font-size-4xl;
+    font-weight: 700;
+    color: $primary-color;
+  }
+
+  .sale {
+    display: inline-block;
+    background: $accent-red;
+    color: $white;
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-sm;
+    font-weight: 600;
+    margin-left: $spacing-sm;
+  }
+
+  .text {
+    font-size: $font-size-sm;
+    color: $text-muted;
+    margin-top: $spacing-xs;
+  }
+}
+
+.them {
+  .price {
+    font-size: $font-size-xl;
+    font-weight: 500;
+    color: $text-muted;
+    text-decoration: line-through;
+  }
+
+  .text {
+    font-size: $font-size-xs;
+    color: $text-muted;
+  }
+}
+
+.pointCont {
+  flex: 1;
+  margin-bottom: $spacing-lg;
+
+  .title {
+    font-size: $font-size-lg;
+    font-weight: 600;
+    color: $text-dark;
+    margin-bottom: $spacing-md;
+  }
+
+  .point {
+    font-size: $font-size-base;
+    color: $text-dark;
+    margin-bottom: $spacing-sm;
+    padding-left: $spacing-md;
+    position: relative;
+
+    &::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: $primary-color;
+    }
+  }
+}
+

@@ -1,0 +1,51 @@
+@use '@/styles/variables' as *;
+
+.faqSection {
+  padding: $spacing-3xl 0;
+  background: $white;
+}
+
+.secTitle {
+  font-size: $font-size-6xl;
+  font-weight: 700;
+  color: $text-dark;
+  margin-bottom: $spacing-2xl;
+  text-align: center;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+.accCont {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accContentC {
+  padding: $spacing-md 0;
+}
+
+.desc {
+  font-size: $font-size-base;
+  color: $text-dark;
+  margin-bottom: $spacing-md;
+  line-height: 1.6;
+}
+
+.point {
+  font-size: $font-size-base;
+  color: $text-muted;
+  margin-bottom: $spacing-sm;
+  padding-left: $spacing-md;
+  position: relative;
+  line-height: 1.6;
+
+  &::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: $primary-color;
+  }
+}
+

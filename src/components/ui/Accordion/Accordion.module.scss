@@ -1,0 +1,56 @@
+@use '@/styles/variables' as *;
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.accordionItem {
+  border-bottom: 1px solid rgba($medium-gray, 0.3);
+  padding-bottom: $spacing-md;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.accordionHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-md 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: color $transition-normal;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &.active {
+    color: $primary-color;
+  }
+}
+
+.question {
+  font-size: $font-size-lg;
+  font-weight: 500;
+  flex: 1;
+  padding-right: $spacing-md;
+}
+
+.accordionContent {
+  overflow: hidden;
+}
+
+.answer {
+  padding: $spacing-md 0;
+  color: $text-muted;
+  line-height: 1.6;
+  font-size: $font-size-base;
+}
+

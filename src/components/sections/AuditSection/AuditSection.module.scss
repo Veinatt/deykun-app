@@ -1,0 +1,72 @@
+@use "@/styles/variables" as *;
+
+.auditSection {
+  padding: $spacing-3xl 0;
+  background: $light-gray;
+}
+
+.secTitle {
+  font-size: $font-size-5xl;
+  font-weight: 700;
+  color: $text-dark;
+  margin-bottom: $spacing-xl;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  span {
+    color: $primary-color;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+.hintCont {
+  display: flex;
+  gap: $spacing-lg;
+  justify-content: center;
+  margin-bottom: $spacing-2xl;
+  flex-wrap: wrap;
+}
+
+.hint {
+  padding: $spacing-sm $spacing-lg;
+  background: $white;
+  border-radius: $border-radius-md;
+  font-size: $font-size-base;
+  font-weight: 600;
+  color: $text-dark;
+  box-shadow: $shadow-sm;
+
+  del {
+    color: $text-muted;
+    text-decoration: line-through;
+  }
+}
+
+.formCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-2xl;
+  max-width: 800px;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+}
+
+.auditImg {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.formWrapper {
+  flex: 1;
+  max-width: 400px;
+}

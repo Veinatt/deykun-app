@@ -1,0 +1,69 @@
+@use '@/styles/variables' as *;
+
+.reviewsSection {
+  padding: $spacing-3xl 0;
+  background: $light-gray;
+}
+
+.secTitle {
+  font-size: $font-size-6xl;
+  font-weight: 700;
+  color: $text-dark;
+  margin-bottom: $spacing-2xl;
+  text-align: center;
+
+  span {
+    color: $primary-color;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+.swiperReview {
+  margin-top: $spacing-xl;
+}
+
+.reviewCard {
+  background: $white;
+  padding: $spacing-xl;
+  border-radius: $border-radius-lg;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $shadow-md;
+}
+
+.name {
+  font-size: $font-size-xl;
+  font-weight: 600;
+  color: $text-dark;
+  margin-bottom: $spacing-sm;
+}
+
+.infoCont {
+  display: flex;
+  gap: $spacing-md;
+  margin-bottom: $spacing-md;
+}
+
+.spec {
+  font-size: $font-size-sm;
+  color: $text-muted;
+}
+
+.org {
+  font-size: $font-size-sm;
+  color: $primary-color;
+  font-weight: 600;
+}
+
+.text {
+  font-size: $font-size-base;
+  color: $text-dark;
+  line-height: 1.6;
+  flex: 1;
+  white-space: pre-line;
+}
+

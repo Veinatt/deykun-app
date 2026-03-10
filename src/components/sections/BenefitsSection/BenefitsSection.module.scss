@@ -1,0 +1,71 @@
+@use '@/styles/variables' as *;
+
+.benefitsSection {
+  padding: $spacing-3xl 0;
+  background: $white;
+}
+
+.secTitle {
+  font-size: $font-size-6xl;
+  font-weight: 700;
+  color: $text-dark;
+  margin-bottom: $spacing-2xl;
+  text-align: center;
+
+  span {
+    color: $primary-color;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+.scCont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: $spacing-xl;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  padding: $spacing-xl;
+  background: $light-gray;
+  border-radius: $border-radius-lg;
+  transition: transform $transition-normal, box-shadow $transition-normal;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-lg;
+  }
+
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: $spacing-md;
+  }
+}
+
+.pTitle {
+  font-size: $font-size-xl;
+  font-weight: 700;
+  color: $text-dark;
+  text-transform: uppercase;
+
+  p {
+    font-size: $font-size-sm;
+    color: $accent-red;
+    margin-bottom: $spacing-xs;
+    text-transform: none;
+  }
+}
+
+.text {
+  font-size: $font-size-base;
+  color: $text-muted;
+  line-height: 1.6;
+}
+
