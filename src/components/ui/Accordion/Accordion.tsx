@@ -25,7 +25,7 @@ export interface AccordionProps {
 
 export const Accordion: React.FC<AccordionProps> = ({
   items,
-  allowMultiple = false,
+  // allowMultiple = false,
   useRedux = true,
   className = '',
 }) => {

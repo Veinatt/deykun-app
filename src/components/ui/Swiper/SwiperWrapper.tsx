@@ -3,7 +3,7 @@
  * Обертка для библиотеки Swiper с предустановленными настройками
  */
 
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination, EffectFade } from 'swiper/modules';

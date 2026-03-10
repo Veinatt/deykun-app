@@ -13,6 +13,7 @@ export interface BenefitItem {
   description: string;
   image?: string;
   order: number;
+  bonus?: boolean;
 }
 
 export interface BenefitsSectionProps {
@@ -98,7 +99,7 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({
             >
               {item.image && <img src={item.image} alt={item.title} />}
               <div className={styles.pTitle}>
-                {(item as any).bonus && <p>БОНУС:</p>}
+                {item.bonus && <p>БОНУС:</p>}
                 {item.title}
               </div>
               <div className={styles.text}>{item.description}</div>

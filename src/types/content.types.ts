@@ -114,18 +114,19 @@ export interface CaseImage {
 // Типы для отзывов
 export interface Review extends DirectusEntity {
   author_name: string;
-  author_position?: string;
-  author_company?: string;
-  author_avatar?: string;
+  position?: string;
+  company?: string;
+  avatar?: string;
+  service?: string;
   text: string;
-  rating: number;
+  rating?: number;
   order: number;
 }
 
 // Типы для FAQ
 export interface FAQItem extends DirectusEntity {
   question: string;
-  answer: string;
+  answer: string[];
   order: number;
 }
 

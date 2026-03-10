@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import { useAppDispatch } from '@/store/hooks';
 import { openModal } from '@/store/slices/modalSlice';
 import { Tabs } from '@/components/ui';
-import { Accordion } from '@/components/ui';
 import { Button } from '@/components/ui';
 import RateCard from './RateCard';
 import type { Rate } from '@/types';

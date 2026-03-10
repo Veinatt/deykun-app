@@ -3,10 +3,10 @@
  * В будущем будет интегрирован с Directus или другим бэкендом
  */
 
-import axios from 'axios';
+// import axios from 'axios';
 import type { FormSubmission } from '../types/content.types';
 
-const FORM_API_URL = import.meta.env.VITE_FORM_API_URL || '/api/form';
+// const FORM_API_URL = import.meta.env.VITE_FORM_API_URL || '/api/form';
 
 /**
  * Отправить форму заявки

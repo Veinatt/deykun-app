@@ -95,7 +95,8 @@ export const getExcludedSection = async (): Promise<ExcludedSection> => {
 /**
  * Получить все тарифы
  */
-export const getRates = async (category?: string): Promise<Rate[]> => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getRates = async (_category?: string): Promise<Rate[]> => {
   // TODO: Заменить на реальный запрос
   // const params = category ? { filter: { category } } : {};
   // const response = await apiClient.get('/rates', { params });
@@ -118,7 +119,8 @@ export const getCaseStudies = async (): Promise<CaseStudy[]> => {
 /**
  * Получить один кейс по slug
  */
-export const getCaseStudyBySlug = async (slug: string): Promise<CaseStudy | null> => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const getCaseStudyBySlug = async (_slug?: string): Promise<CaseStudy | null> => {
   // TODO: Заменить на реальный запрос
   // const response = await apiClient.get(`/case_studies/${slug}`);
   // return response.data;

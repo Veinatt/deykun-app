@@ -1,12 +1,12 @@
 // src/hooks/useFormSubmit.ts
 import { useState } from 'react';
-import { SubmitFormData } from '@/utils/types';
+import { IFormData } from '@/utils/types';
 
 export const useFormSubmit = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const submitForm = async (data: SubmitFormData) => {
+  const submitForm = async (data: IFormData) => {
     setIsLoading(true);
     setError(null);
 
