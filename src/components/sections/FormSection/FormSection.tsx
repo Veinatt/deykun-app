@@ -70,7 +70,7 @@ export const FormSection: React.FC<FormSectionProps> = ({
           <Button variant="primary" size="large" onClick={handleOpenModal} formType={formType}>
             Оставить заявку
           </Button>
-          <img src="/img/sec-6-form.png" alt="оставить заявку" className={styles.formImg} />
+          <img src={`${import.meta.env.BASE_URL}img/sec-6-form.png`} alt="оставить заявку" className={styles.formImg} />
         </motion.div>
       </div>
     </section>

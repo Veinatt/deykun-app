@@ -126,7 +126,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ content }) => {
         </svg>
       </motion.a>
 
-      <img src="/img/sec-1-bg.png" alt="Фон" className={styles.heroBg} />
+      <img src={`${import.meta.env.BASE_URL}img/sec-1-bg.png`} alt="Фон" className={styles.heroBg} />
 
       <div className={`${styles.centBlock} container`}>
         <motion.div

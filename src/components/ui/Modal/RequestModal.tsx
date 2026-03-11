@@ -388,7 +388,7 @@ export const RequestModal: React.FC = () => {
                     </form>
 
                     <img
-                      src="/img/modal-img.png"
+                      src={`${import.meta.env.BASE_URL}img/modal-img.png`}
                       alt="оставить заявку"
                       className={styles.modalImg}
                     />

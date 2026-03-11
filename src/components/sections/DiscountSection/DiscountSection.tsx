@@ -70,7 +70,7 @@ export const DiscountSection: React.FC<DiscountSectionProps> = ({
             </Button>
           </motion.div>
         </div>
-        <img src="/img/sec-6.png" alt="оставить заявку" className={styles.discountImg} />
+        <img src={`${import.meta.env.BASE_URL}img/sec-6.png`} alt="оставить заявку" className={styles.discountImg} />
       </div>
     </section>
   );

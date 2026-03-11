@@ -72,7 +72,7 @@ export const AuditSection: React.FC<AuditSectionProps> = ({
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <img src="/img/sec-16.png" alt="оставить заявку, аудит" className={styles.auditImg} />
+          <img src={`${import.meta.env.BASE_URL}img/sec-16.png`} alt="оставить заявку, аудит" className={styles.auditImg} />
           <div className={styles.formWrapper}>
             <Button variant="primary" size="large" onClick={handleOpenModal} formType={formType} fullWidth>
               Оставить заявку

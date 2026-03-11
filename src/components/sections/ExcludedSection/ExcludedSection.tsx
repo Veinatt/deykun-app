@@ -18,25 +18,25 @@ export const ExcludedSection: React.FC<ExcludedSectionProps> = ({ content }) => 
     {
       id: '1',
       text: 'Сайт и реклама не приносят заявок, а бюджеты сливаются в трубу',
-      emoji_icon: '/img/emo-1.svg',
+      emoji_icon: 'img/emo-1.svg',
       order: 1,
     },
     {
       id: '2',
       text: 'Постоянно приходится что-то переделывать, а результат нулевой',
-      emoji_icon: '/img/emo-2.svg',
+      emoji_icon: 'img/emo-2.svg',
       order: 2,
     },
     {
       id: '3',
       text: 'Работа затягивается, не соблюдаются дедлайны',
-      emoji_icon: '/img/emo-3.svg',
+      emoji_icon: 'img/emo-3.svg',
       order: 3,
     },
     {
       id: '4',
       text: 'И многое, многое другое, страшное и ужасное',
-      emoji_icon: '/img/emo-4.svg',
+      emoji_icon: 'img/emo-4.svg',
       order: 4,
       highlight: 'Только не с нами!',
     },
@@ -65,7 +65,7 @@ export const ExcludedSection: React.FC<ExcludedSectionProps> = ({ content }) => 
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <img src={item.emoji_icon} alt="исключенная ситуация" />
+              <img src={import.meta.env.BASE_URL + item.emoji_icon} alt="исключенная ситуация" />
               <div>
                 {item.text}
                 {item.highlight && <p>{item.highlight}</p>}

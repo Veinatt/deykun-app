@@ -41,12 +41,12 @@ export const CaseStudySection: React.FC<CaseStudySectionProps> = ({
     <section className={styles.deykunSec3New}>
       {/* Декоративные изображения */}
       <img
-        src="/img/sec-3-1.png"
+        src={`${import.meta.env.BASE_URL}img/sec-3-1.png`}
         alt="кейс по сайту"
         className={styles.sec31}
       />
       <img
-        src="/img/sec-3-2.png"
+        src={`${import.meta.env.BASE_URL}img/sec-3-2.png`}
         alt="кейс по сайту"
         className={styles.sec32}
       />

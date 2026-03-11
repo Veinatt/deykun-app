@@ -5,6 +5,7 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  base: process.env.NODE_ENV === 'production' ? '/deykun-app/' : '/',  // важно!
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -21,5 +22,4 @@ export default defineConfig({
       },
     },
   },
-  // base: "/deykun-app/",
 });

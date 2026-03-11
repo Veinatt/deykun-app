@@ -32,28 +32,28 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({
       id: '1',
       title: 'ОПТИМИЗАЦИЯ ПРОЦЕССОВ',
       description: 'Контроль сроков и задач проводится через CRM-систему. Заказчик к ней может подключиться и также контролировать все процессы',
-      image: '/img/sec-7-1.png',
+      image: 'img/sec-7-1.png',
       order: 1,
     },
     {
       id: '2',
       title: 'КОМПЛЕКС ДЛЯ КАЖДОГО',
       description: 'Создание сайта и продвижение в одном заказе. Будем способствовать дальнейшему развитию вашего бизнеса',
-      image: '/img/sec-7-2.png',
+      image: 'img/sec-7-2.png',
       order: 2,
     },
     {
       id: '3',
       title: 'ГАРАНТИЯ КАЧЕСТВА',
       description: 'Загрузка за 2 секунды. Четкий и понятный путь клиента от входа до кнопки «Купить»',
-      image: '/img/sec-7-3.png',
+      image: 'img/sec-7-3.png',
       order: 3,
     },
     {
       id: '4',
       title: 'ЭКОНОМИЯ ВРЕМЕНИ',
       description: 'В среднем мы создаем сайты за 3 недели, но если вам нужно быстрее запуститься - мы это можем! Быстро формируем время, определяем сроки и стартуем!',
-      image: '/img/sec-7-4.png',
+      image: 'img/sec-7-4.png',
       order: 4,
     },
     {
@@ -66,7 +66,7 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({
       id: '6',
       title: 'БЕСПЛАТНАЯ ТЕХПОДДЕРЖКА',
       description: 'Мы не пропадаем после создания сайта. Мы всегда смотрим наши проекты после их запуска и готовы помочь!',
-      image: '/img/sec-7-5.png',
+      image: 'img/sec-7-5.png',
       order: 6,
       bonus: true,
     },
@@ -97,7 +97,7 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              {item.image && <img src={item.image} alt={item.title} />}
+              {item.image && <img src={import.meta.env.BASE_URL + item.image} alt={item.title} />}
               <div className={styles.pTitle}>
                 {item.bonus && <p>БОНУС:</p>}
                 {item.title}

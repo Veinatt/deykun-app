@@ -17,29 +17,29 @@ export const PurposeSection: React.FC<PurposeSectionProps> = ({ content }) => {
     {
       id: '1',
       title: 'Вызвать доверие и лояльность клиентов',
-      image_small: '/img/sec-2-1-sm.png',
-      image_large: '/img/sec-2-1-lg.png',
+      image_small: 'img/sec-2-1-sm.png',
+      image_large: 'img/sec-2-1-lg.png',
       order: 1,
     },
     {
       id: '2',
       title: 'Создать инструмент для привлечения клиентов',
-      image_small: '/img/sec-2-2-sm.png',
-      image_large: '/img/sec-2-2-lg.png',
+      image_small: 'img/sec-2-2-sm.png',
+      image_large: 'img/sec-2-2-lg.png',
       order: 2,
     },
     {
       id: '3',
       title: 'Пробить денежный потолок, в который ты уперся',
-      image_small: '/img/sec-2-3-sm.png',
-      image_large: '/img/sec-2-3-lg.png',
+      image_small: 'img/sec-2-3-sm.png',
+      image_large: 'img/sec-2-3-lg.png',
       order: 3,
     },
     {
       id: '4',
       title: 'Прокачать маркетинг',
-      image_small: '/img/sec-2-4-sm.png',
-      image_large: '/img/sec-2-4-lg.png',
+      image_small: 'img/sec-2-4-sm.png',
+      image_large: 'img/sec-2-4-lg.png',
       order: 4,
     },
   ];
@@ -67,12 +67,12 @@ export const PurposeSection: React.FC<PurposeSectionProps> = ({ content }) => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <div className={styles.topC}>
-                <img className={styles.imgSm} src={item.image_small} alt={item.title} />
+                <img className={styles.imgSm} src={import.meta.env.BASE_URL + item.image_small} alt={item.title} />
                 <div>{item.title}</div>
               </div>
               <img 
                 className={`${styles.imgLg} ${index === 0 ? styles.sec21Lg : ''}`} 
-                src={item.image_large} 
+                src={import.meta.env.BASE_URL + item.image_large} 
                 alt={item.title} 
               />
             </motion.div>
